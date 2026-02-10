@@ -1,2 +1,224 @@
-# Hexaworks
-website
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexaworks - Jasa Instalasi OS & Setting WiFi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="nav-circle">
+                 <img src="logo.jpeg">
+             </div>
+        </div>
+        <a href="#" class="nav-brand">Hexaworks</a>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#services" onclick="closeMenu()">Layanan</a></li>
+                <li><a href="#showcase" onclick="closeMenu()">Keunggulan</a></li>
+                <li><a href="#testimonials" onclick="closeMenu()">Testimoni</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Kontak</a></li>
+            </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Solusi Instalasi OS & Setting WiFi Profesional</h1>
+            <p>Layanan cepat, terpercaya, dan berkualitas untuk semua kebutuhan teknologi Anda</p>
+            <a href="#contact" class="btn-primary">Hubungi Kami Sekarang!</a>
+        </div>
+    </section>
+
+    <!-- Icons Section -->
+    <section class="icons-section" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="icon-box">
+                    <div class="icon-circle">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <h3>Instalasi Windows</h3>
+                    <p>Instalasi Windows 10, 11 dengan driver lengkap, aktivasi resmi, dan optimasi performa maksimal untuk pengalaman terbaik.</p>
+                </div>
+                <div class="icon-box">
+                    <div class="icon-circle">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3>Instalasi Linux</h3>
+                    <p>Setup berbagai distro Linux seperti Ubuntu, Debian, Fedora dengan konfigurasi custom sesuai kebutuhan Anda.</p>
+                </div>
+                <div class="icon-box">
+                    <div class="icon-circle">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Setting WiFi & Router</h3>
+                    <p>Konfigurasi router, optimasi jaringan, keamanan WiFi, dan troubleshooting koneksi internet yang lambat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Showcases -->
+    <section class="showcase" id="showcase">
+        <div class="showcase-item">
+            <div class="showcase-img">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="showcase-text">
+                <h2>Instalasi OS Profesional</h2>
+                <p>Kami menyediakan layanan instalasi sistem operasi untuk Windows, Linux, dan macOS dengan prosedur yang tepat dan aman.</p>
+                <p>Dilengkapi dengan driver lengkap, software essential, dan optimasi sistem untuk performa maksimal sejak awal.</p>
+                <p>Garansi 30 hari untuk memastikan sistem Anda berjalan dengan sempurna.</p>
+            </div>
+        </div>
+
+        <div class="showcase-item">
+            <div class="showcase-img">
+                <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="showcase-text">
+                <h2>Konfigurasi Jaringan & WiFi</h2>
+                <p>Ahli dalam setup dan konfigurasi router, access point, dan jaringan rumah atau kantor.</p>
+                <p>Optimasi kecepatan internet, setting keamanan WPA3, parental control, dan guest network untuk kebutuhan Anda.</p>
+                <p>Troubleshooting masalah koneksi, WiFi lemah, atau gangguan jaringan dengan cepat dan efektif.</p>
+            </div>
+        </div>
+
+        <div class="showcase-item">
+            <div class="showcase-img">
+                <i class="fas fa-tools"></i>
+            </div>
+            <div class="showcase-text">
+                <h2>Support & Maintenance</h2>
+                <p>Layanan maintenance berkala untuk menjaga sistem Anda tetap optimal dan aman dari virus atau malware.</p>
+                <p>Troubleshooting cepat untuk berbagai masalah teknis, backup data, dan recovery sistem yang rusak.</p>
+                <p>Konsultasi gratis untuk upgrade hardware atau optimasi sistem sesuai kebutuhan Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Apa Kata Pelanggan Kami</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-img">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h5>Bagas</h5>
+                    <p>"Pelayanan sangat memuaskan! Laptop saya sekarang jauh lebih cepat setelah diinstall ulang Windows 11. Teknisinya profesional dan ramah."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-img">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h5>Ojan</h5>
+                    <p>"Pelayanannya cepat dan hasilnya rapi. Instalasi sistem dan pengaturan jaringannya berjalan lancar, teknisinya juga sangat profesional dan komunikatif."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-img">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h5>Elang</h5>
+                    <p>"Instalasi Linux Ubuntu berjalan lancar dan dijelaskan dengan detail. Harga terjangkau dengan hasil yang memuaskan. Highly recommended!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Siap untuk Upgrade Sistem Anda?</h2>
+            <a href="https://wa.me/6289524633054" class="btn-secondary">Hubungi Kami via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Hexaworks</h4>
+                    <p>Solusi profesional untuk instalasi OS dan konfigurasi jaringan. Melayani area Bandung dan sekitarnya.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/hexaworks4/?utm_source=ig_web_button_share_sheet"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/6289524633054"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#">Instalasi Windows</a></li>
+                        <li><a href="#">Instalasi Linux</a></li>
+                        <li><a href="#">Instalasi macOS</a></li>
+                        <li><a href="#">Setting WiFi</a></li>
+                        <li><a href="#">Troubleshooting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +62 895-2463-3054</li>
+                        <li><i class="fas fa-envelope"></i> info@hexaworks.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Bandung, Jawa Barat</li>
+                        <li><i class="fas fa-clock"></i> Senin - Sabtu: 08:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hexaworks. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        function closeMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.remove('active');
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 60;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.boxShadow = '0 4px 8px rgba(0,0,0,.2)';
+            } else {
+                nav.style.boxShadow = '0 2px 4px rgba(0,0,0,.1)';
+            }
+        });
+    </script>
+</body>
+</html>
